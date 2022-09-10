@@ -1,4 +1,4 @@
-let isPhoneRequired  false
+let isPhoneRequired = false
 
 const phoneLabelSpan = document.querySelector('.phone-label-span')
 const phoneField = document.getElementById('phone')
@@ -33,7 +33,7 @@ document.querySelector('button[type="submit"]')
       return showAndHideErrorMessage()
     }
     if (isPhoneRequired && !phoneField.value) {
-      return showAndHideErrorMessage()
+    //  return showAndHideErrorMessage()
     }
     if (!emailField.value.match(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/)) {
       return showAndHideErrorMessage()
